@@ -1,0 +1,67 @@
+import turtle
+
+bob = turtle.Turtle()
+bob.color("green")
+
+# grass
+bob.begin_fill()
+bob.forward(400)
+bob.right(90)
+bob.forward(500)
+bob.right(90)
+bob.forward(800)
+bob.right(90)
+bob.forward(500)
+bob.right(90)
+bob.forward(400)
+bob.end_fill()
+
+# sky
+bob.color("cyan")
+bob.begin_fill()
+bob.forward(400)
+bob.left(90)
+bob.forward(500)
+bob.left(90)
+bob.forward(800)
+bob.left(90)
+bob.forward(500)
+bob.left(90)
+bob.forward(400)
+bob.end_fill()
+
+bob.color("tan")
+bob.begin_fill()
+for i in range(4):
+    bob.forward(100)
+    bob.left(90)
+bob.end_fill()
+
+bob.left(90)
+bob.forward(100)
+bob.right(90)
+bob.forward(100)
+bob.left(90)
+bob.begin_fill()
+for i in range(2):
+    bob.left(60)
+    bob.forward(60)
+bob.end_fill()
+bob.color("black")
+bob.left(60)
+bob.left(90)
+bob.forward(105)
+bob.left(90)
+bob.left(60)
+bob.forward(60)
+bob.left(60)
+bob.forward(60)
+bob.left(60)
+bob.left(90)
+bob.forward(2)
+bob.right(90)
+
+for i in range(4):
+    bob.forward(100)
+    bob.left(90)
+turtle.exitonclick()
