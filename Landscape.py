@@ -64,4 +64,26 @@ bob.right(90)
 for i in range(4):
     bob.forward(100)
     bob.left(90)
+
+bob.forward(100)
+bob.left(90)
+bob.forward(100)
+bob.forward(10)
+bob.color("tan")
+
+for i in range(13):
+    bob.begin_fill()
+    bob.forward(10)
+    bob.left(90)
+    bob.forward(40)
+    bob.left(60)
+    bob.forward(5)
+    bob.left(60)
+    bob.forward(5)
+    bob.left(60)
+    bob.forward(40)
+    bob.left(90)
+    bob.end_fill()
+    bob.forward(20)
+
 turtle.exitonclick()
